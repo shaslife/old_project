@@ -209,6 +209,10 @@ a {
 .btn_contact:checked ~ .contact .items {
     display: none;
 }
+.btn_contact:checked ~ .btn {
+    background-color: rgb(255, 255, 255);
+    color:  rgb(40, 40, 40);
+}
 
 .btn {
     width: fit-content;
@@ -216,11 +220,10 @@ a {
     margin: 5px auto; 
 
     border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    color:  rgb(40, 40, 40);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow:none;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.285);
-
-    
 
     display:block; 
     
