@@ -16,7 +16,7 @@ body{
 
     margin: auto;
     padding: 5px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     
     border-radius: 30px; 
     background:
@@ -88,6 +88,7 @@ body{
     overflow-y: auto;
 
     margin-top: 20px;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
 
@@ -121,8 +122,9 @@ body{
     width: auto;
     height: 50px;
 
-    margin-top: 30px;
     border-radius: 100px;
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
 
     display: flex;
     justify-content: space-around;    
@@ -132,8 +134,8 @@ body{
     background-color: rgb(255, 255, 255);
     box-shadow: inset 5px 5px 5px rgba(95, 95, 95, 0.492);
     border:1px solid rgba(172, 172, 172, 0.1);    
-   
-
+    
+    transition: .3s;
 }
 
 .items {
@@ -186,4 +188,53 @@ a {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.285);
        
 }
+
+/* Кнопка панели контактов */
+
+.panel_contact {
+    text-align: center;
+    
+}
+
+.btn_contact {
+    opacity: 0;
+    
+}
+
+.btn_contact:checked ~ .contact {
+    height: 0px;  
+    opacity: 0;  
+}
+
+.btn_contact:checked ~ .contact .items {
+    display: none;
+}
+
+.btn {
+    width: fit-content;
+    height: 20px;
+    margin: 5px auto; 
+
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color:  rgb(40, 40, 40);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.285);
+
+    
+
+    display:block; 
+    
+    transition: .3s;
+}
+.btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow:none;
+
+}
+
+.btn_contact {
+    display: none;
+}
+
 
