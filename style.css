@@ -6,7 +6,7 @@
 
 body{
     margin-top: 10px;
-    background-color: rgba(158, 158, 158, 0.407);
+    background-color: #EDEEF0;
     
 }
 
@@ -19,8 +19,17 @@ body{
     padding-bottom: 20px;
     
     border-radius: 30px; 
-    background-color: rgba(255, 255, 255, 0.345);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.285);   
+    background:
+    radial-gradient(circle at 50% 0,
+      rgba(255, 0, 0, 0.914),
+      rgba(255, 0, 0, 0) 70.71%),
+    radial-gradient(circle at 6.7% 75%,
+      rgba(0, 0, 255, 0.701),
+      rgba(0, 0, 255, 0) 70.71%),
+    radial-gradient(circle at 93.3% 75%,
+      rgba(0, 255, 0, 0.725),
+      rgba(0, 255, 0, 0) 70.71%) rgba(255, 255, 255, 0);
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.285);   
     border:1px solid rgba(0, 0, 0, 0.079);    
 }
 
@@ -51,7 +60,7 @@ body{
     font-size: 30px;
     color:  rgb(40, 40, 40);
     border-radius: 7px;
-    background-color: rgba(233, 233, 233, 0.407);
+    background-color: rgb(255, 255, 255);
     box-shadow: inset 5px 5px 5px rgba(95, 95, 95, 0.492);
     border:1px solid rgba(172, 172, 172, 0.1);    
    
@@ -67,7 +76,7 @@ body{
     color:  rgb(40, 40, 40);
 
     border-radius: 5px;
-    background-color: rgba(233, 233, 233, 0.407);
+    background-color: rgb(255, 255, 255);
     box-shadow: inset 5px 5px 5px rgba(95, 95, 95, 0.492);
     border:1px solid rgba(172, 172, 172, 0.1);    
    
@@ -87,9 +96,9 @@ body{
     text-align-last: center;
     color:  rgb(40, 40, 40);
 
-    background-color: rgba(233, 233, 233, 0.407);
+    background-color: rgb(255, 255, 255);
     box-shadow: inset  5px 5px 5px rgba(95, 95, 95, 0.492);
-    border:1px solid rgba(172, 172, 172, 0.1);
+    border: 1px solid rgba(172, 172, 172, 0.1);
     
 }
 
@@ -121,7 +130,7 @@ body{
     align-items: center;
     
     border-radius: 15px;
-    background-color: rgba(233, 233, 233, 0.407);
+    background-color: rgb(255, 255, 255);
     box-shadow: inset 5px 5px 5px rgba(95, 95, 95, 0.492);
     border:1px solid rgba(172, 172, 172, 0.1);    
    
@@ -141,11 +150,13 @@ body{
 
 }
 
+
 .tel {
     width: 40px;
     height: 40px;
     background-image: url(tel.svg);
     border-radius: 10px;
+   
 
 }
 
